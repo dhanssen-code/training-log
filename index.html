@@ -1028,6 +1028,7 @@ const A = {
       <label>Move to week<select id="ctWeek">${rep(TOTAL_WEEKS, i => { const L = locate(i*4); return `<option value="${i}" ${i===wk?'selected':''}>Week ${i+1} (Phase ${L.phase+1}: ${esc(PH[L.phase].name)})</option>`; }).join('')}</select>
       <span class="hint">For players who join late or need to repeat a phase. The next session becomes Monday of that week. Skipping ahead skips progressions, so use it carefully.</span></label>
       <button class="btn" data-act="ctWeek">Move player</button>
+      <a class="btn" href="program.html">View the full program</a>
       <button class="btn danger" data-act="ctReset">Restart program at week 1</button>
       <button class="btn" data-act="closeModal">Close</button></div>`);
   }),

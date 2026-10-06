@@ -1,6 +1,6 @@
 // Offline support. Bump VERSION whenever you upload a new index.html.
-const VERSION = 'traininglog-v2';
-const ASSETS = ['./', './index.html', './program.js', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
+const VERSION = 'traininglog-v3';
+const ASSETS = ['./', './index.html', './program.js', './program.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
